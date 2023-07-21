@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:root {
+	--txt: #534A42;
+	--main: #4C201C;
+	--black: #000000;
+	--white: #ffffff;
+	--gray: #717171;
+	--link: #004890;
+	--placeholderBorder: #D7D2CA;
+	--btnBgColor: #F5EDE2;
+	--priceColor: #FF1500;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+html,
+body {
+	color: var(--main);
+}
+
+body {
+	background: url(../images/background/body_bg.jpg) repeat top left;
+	font-family: 'Nunito Sans', sans-serif;
+	text-rendering: optimizeLegibility;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img {
+	width: inherit;
+}
+
+input,
+button,
+textarea {
+	font-size: inherit;
+}
+
+button {
+	cursor: pointer;
+	color: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+ul li {
+	list-style: none;
+}
+
+.wrapper {
+	height: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	background: url(../images/background/wrapper_bg_gen.png) no-repeat top;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+
+@media screen and (min-width: 1030px){
+	.wrapper {
+		background: url(../images/background/wrapper_bg_gen.png) no-repeat top;
+		-webkit-background-size: auto;
+		-moz-background-size: auto;
+		-o-background-size: auto;
+		background-size: auto;
+	}
+}

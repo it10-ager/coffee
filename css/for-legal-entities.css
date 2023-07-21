@@ -1,0 +1,199 @@
+.main-section .form-for-legal-entities{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.main-section .form-for-legal-entities .blocks-field{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-section .form-for-legal-entities .blocks-field .descr .dots{
+	display: none;
+}
+
+.main-section .form-for-legal-entities .blocks-field:not(:last-of-type){
+	margin-bottom: 4px;
+}
+
+.main-section .form-for-legal-entities .blocks-field:last-of-type{
+	margin-bottom: 10px;
+}
+
+.main-section .form-for-legal-entities .blocks-field .descr{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 18px;
+	color: var(--txt);
+}
+
+.main-section .form-for-legal-entities .blocks-field input::placeholder{
+	color: var(--gray);
+}
+
+.main-section .form-for-legal-entities .blocks-field input{
+	font-style: italic;
+	font-weight: 300;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: var(--black);
+	padding: 10px;
+	gap: 10px;
+	width: 150px;
+	height: 39px;
+	border: 2px solid var(--placeholderBorder);
+	background: var(--white);
+	border-radius: 4px;
+}
+
+.main-section .form-for-legal-entities .blocks-field input:focus{
+	border: 2px solid var(--black);
+}
+
+.main-section .form-for-legal-entities .blocks-field.commentaryi{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.main-section .form-for-legal-entities .blocks-field.commentaryi .descr{
+	margin-bottom: 8px;
+	align-self: flex-start;
+}
+
+.main-section .form-for-legal-entities .blocks-field.commentaryi textarea:focus{
+	border: 2px solid var(--black);
+}
+
+.main-section .form-for-legal-entities .blocks-field.commentaryi textarea{
+	width: 100%;
+	font-style: normal;
+	font-weight: 400;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: var(--black);
+	padding: 10px;
+	gap: 10px;
+	height: 80px;
+	border: 2px solid var(--placeholderBorder);
+	background: var(--white);
+	border-radius: 4px;
+	resize: none;
+}
+
+.changes-saved{
+	display: block;
+	font-size: 13px;
+}
+
+@media screen and (min-width: 700px){
+	.main-section .form-for-legal-entities .blocks-field:not(:last-of-type){
+		margin-bottom: 6px;
+	}
+
+	.main-section .form-for-legal-entities .blocks-field .descr{
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 19px;
+	}
+
+	.main-section .form-for-legal-entities .blocks-field input{
+		font-size: 14px;
+		line-height: 19px;
+		width: 220px;
+		height: 39px;
+	}
+
+	.main-section .form-for-legal-entities .blocks-field.commentaryi{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.main-section .form-for-legal-entities .blocks-field.commentaryi textarea{
+		width: 220px;
+		font-size: 14px;
+		line-height: 19px;
+	}
+
+	.changes-saved{
+		display: block;
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 1030px){
+	.main-section .form-for-legal-entities .blocks-field .descr{
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.main-section .form-for-legal-entities .blocks-field .dotted{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 410px;
+		justify-content: space-between;
+	}
+
+	.main-section .form-for-legal-entities .blocks-field .dots{
+		display: block;
+		height: 39px;
+		border-bottom: 1px dotted var(--placeholderBorder);
+	}
+
+	.main-section .form-for-legal-entities .blocks-field .dots.company-name{
+		width: 200px;
+	}
+
+	.main-section .form-for-legal-entities .blocks-field .dots.inn{
+		width: 365px;
+	}
+
+	.main-section .form-for-legal-entities .blocks-field .dots.kpp{
+		width: 365px;
+	}
+
+	.main-section .form-for-legal-entities .blocks-field .dots.leg-ent{
+		width: 240px;
+	}
+
+	.main-section .form-for-legal-entities .blocks-field .dots.fio{
+		width: 230px;
+	}
+
+	.main-section .form-for-legal-entities .blocks-field .dots.phone{
+		width: 340px;
+	}
+
+	.main-section .form-for-legal-entities .blocks-field .dots.mail{
+		width: 260px;
+	}
+
+	.main-section .form-for-legal-entities .blocks-field input{
+		font-size: 14px;
+		line-height: 19px;
+		width: 289px;
+		height: 39px;
+	}
+
+	.main-section .form-for-legal-entities .blocks-field.commentaryi textarea{
+		font-size: 14px;
+		line-height: 19px;
+		width: 289px;
+	}
+
+	.changes-saved{
+		display: block;
+		font-size: 16px;
+	}	
+}
